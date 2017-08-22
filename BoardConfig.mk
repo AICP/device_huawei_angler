@@ -181,6 +181,9 @@ DEVICE_MATRIX_FILE := device/huawei/angler/compatibility_matrix.xml
 
 PRODUCT_USE_VNDK_OVERRIDE := false
 
+# Enable workaround for slow rom flash
+BOARD_SUPPRESS_SECURE_ERASE := true
+
 -include vendor/huawei/angler/BoardConfigVendor.mk
 
 # Legacy blob support
