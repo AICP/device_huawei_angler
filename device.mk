@@ -549,8 +549,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=23
 
-# setup dalvik vm configs.
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+# Inherit custom memory configurations
+$(call inherit-product, vendor/aicp/config/phone-xxhdpi-3072-dalvik-heap.mk)
+$(call inherit-product, vendor/aicp/config/phone-xxhdpi-3072-hwui-memory.mk)
 
 # drmservice prop
 PRODUCT_PROPERTY_OVERRIDES += \
