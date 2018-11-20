@@ -15,6 +15,11 @@ PRODUCT_MODEL := Nexus 6P
 
 TARGET_VENDOR := huawei
 
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="doc HD (semdoc), Davor B (LorD ClockaN)"
+
+# Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
     PRIVATE_BUILD_DESC="angler-user 8.1.0 OPM7.181205.001 5080180 release-keys"
