@@ -240,7 +240,7 @@ PRODUCT_PACKAGES += \
     libmmjpeg_interface \
     libqomx_core \
     mm-qcamera-app \
-    Snap
+    SnapdragonCamera
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.cpp.duplication=false
